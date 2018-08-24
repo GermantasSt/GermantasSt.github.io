@@ -15,7 +15,7 @@
         <link rel="stylesheet" href="css/main.css">
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-        <script type="text/javascript" src="https://display.ugc.bazaarvoice.com/bvstaging/static/TestCustomerC7Upgrades/germantaszone/en_US/bvapi.js"></script>
+        <script type="text/javascript" src="<script async src="https://apps.bazaarvoice.com/deployments/testcustomerc7upgrades/germantaszone/staging/en_US/bv.js"></script>"></script>
         <script type="text/javascript">
 	$BV.configure('global', { productId : 'product1' });
 </script>
@@ -28,25 +28,12 @@
           <!-- Add schema.org product class to the h1 tag-->
 	         <h1 itemprop="name">Awesome Product</h1>
 
-          <div id="BVRRSummaryContainer"></div>
-          <div id="BVRRContainer"></div>
-            <script type="text/javascript">
-            $BV.ui( 'rr', 'show_reviews', {
-              doShowContent : function () {
-         // If the container is hidden (such as behind a tab), put code here to make it visible
-         //(open the tab).
-              }
-              });
-            </script>
-          <div id="BVQAContainer"></div>
-<script type="text/javascript">
-   $BV.ui( 'qa', 'show_questions', {
-      doShowContent : function () {
-         // If the container is hidden (such as behind a tab), put code here to make it visible
-         //(open the tab).
-      }
-   });
-</script>
+        <div data-bv-show="rating_summary" data-bv-product-id="product1"></div>
+        <div data-bv-show="inline_rating" data-bv-product-id="product1"></div>
+        <div data-bv-show="reviews" data-bv-product-id="product1"></div>
+        <div data-bv-show="review_highlights" data-bv-product-id="product1"></div>
+        <div data-bv-show="questions" data-bv-product-id="product1"></div>
+        
 </div>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
